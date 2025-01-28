@@ -5,9 +5,7 @@
 @tailwind utilities;
 
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+
   text-align: center;
 }
 
@@ -45,4 +43,21 @@
 
 .read-the-docs {
   color: #888;
+}
+.read-more-btn {
+  display: inline-block;
+  background-color: #22c55e; /* Green */
+  color: white;
+  font-size: 14px;
+  padding: 6px 14px; /* Small padding */
+  border-radius: 6px;
+  transition: background 0.3s ease;
+  text-decoration: none;
+  width: auto; /* Fixes long background */
+  min-width: 100px; /* Ensures button is not too small */
+  text-align: center;
+}
+
+.read-more-btn:hover {
+  background-color: #15803d; /* Darker Green on Hover */
 }

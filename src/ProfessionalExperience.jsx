@@ -1,0 +1,87 @@
+import React from "react";
+
+// Import images (Replace these with actual paths)
+import charlesSchwabImg from "./assets/charlesSchwab.png";
+import transUnionImg from "./assets/TransUnion1.png";
+import fssTechImg from "./assets/FSS-Logo.png";
+
+// Experience data
+const experiences = [
+  {
+    title: "Software Engineer",
+    company: "Charles Schwab, USA",
+    duration: "Jan 2024 – Till Date",
+    image: charlesSchwabImg,
+    gradient: "bg-white",
+    textColor: "text-blue-900",
+    buttonColor: "bg-green-500 hover:bg-green-700",
+    link: "https://www.schwab.com/",
+  },
+  {
+    title: "Associate Software Developer",
+    company: "TransUnion, India",
+    duration: "Jul 2019 – Aug 2022",
+    image: transUnionImg,
+    gradient: "bg-gray-100",
+    textColor: "text-blue-900",
+    buttonColor: "bg-green-500 hover:bg-green-700",
+    link: "https://www.transunion.com/?atvy=%7B%22264995%22%3A%22Experience+B%22%7D",
+  },
+  {
+    title: "Software Engineer - I",
+    company: "FSS Technology Inc., India",
+    duration: "Jul 2016 – Jul 2019",
+    image: fssTechImg,
+    gradient: "bg-white",
+    textColor: "text-blue-900",
+    buttonColor: "bg-green-500 hover:bg-green-700",
+    link: "https://www.fsstech.com/",
+  },
+];
+
+const ProfessionalExperience = () => {
+  return (
+    <section id="experience" className="w-full py-10">
+      <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">
+        Professional Experience
+      </h2>
+
+      {experiences.map((exp, index) => (
+        <div
+          key={index}
+          className={`flex flex-col ${
+            index % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"
+          } items-center ${exp.gradient} overflow-hidden mb-8`}
+        >
+          {/* Image Section (Full Width to Edge) */}
+          <div className="w-full md:w-[50%] h-[500px]">
+            <img
+              src={exp.image}
+              alt={exp.company}
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+          {/* Text Section */}
+          <div className="w-full md:w-1/2 p-6 text-center md:text-left flex flex-col justify-center">
+            <h3 className={`text-2xl font-bold ${exp.textColor}`}>{exp.title}</h3>
+            <p className="text-lg text-gray-600">{exp.company}</p>
+            <p className="text-md text-gray-500">{exp.duration}</p>
+            
+            {/* Read More Button with Smaller Width */}
+            <a
+              href={exp.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="read-more-btn"
+            >
+              Read More
+            </a>
+          </div>
+        </div>
+      ))}
+    </section>
+  );
+};
+
+export default ProfessionalExperience;
