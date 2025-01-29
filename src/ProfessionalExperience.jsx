@@ -51,7 +51,7 @@ const ProfessionalExperience = () => {
           key={index}
           className={`flex flex-col ${
             index % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"
-          } items-center ${exp.gradient} overflow-hidden mb-8 rounded-2xl shadow-lg`}
+          } items-center ${exp.gradient} overflow-hidden mb-8 rounded-2xl shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl`}
         >
           {/* Image Section (Full Width to Edge) */}
           <div className="w-full md:w-[50%] h-[500px]">
@@ -63,7 +63,7 @@ const ProfessionalExperience = () => {
           </div>
 
           {/* Text Section (Centered Content) */}
-          <div className="w-full md:w-1/2 p-6 flex flex-col items-center justify-center text-center">
+          <div className="w-full md:w-1/2 p-6 flex flex-col items-center justify-center bg-gradient-to-br from-blue-100/50 to-indigo-200/50 backdrop-blur-md rounded-xl shadow-lg">
             <h3 className={`text-2xl font-bold ${exp.textColor}`}>{exp.title}</h3>
             <p className="text-lg text-gray-600">{exp.company}</p>
             <p className="text-md text-gray-500">{exp.duration}</p>
