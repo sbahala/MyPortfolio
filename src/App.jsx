@@ -53,7 +53,7 @@ const App = () => {
           <section id="introduction" className="bg-white mx-auto max-w-6xl rounded-2xl p-6 transition-transform transform hover:scale-105">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Introduction</h2>
             <p className="text-gray-700 font-bold">
-              Welcome to my portfolio! I’m a Software Engineer with a master’s degree in Software Engineering from Stevens Institute of Technology and 7 years of professional experience. This page highlights my skills, experience, and project work, showcasing my expertise in Java programming, web development, and cloud-based solutions.
+              Welcome to my portfolio! I’m a Software Engineer with a master’s degree in Software Engineering from Stevens Institute of Technology and have 7 years of professional experience. This page highlights my skills, experience, and project work, showcasing my expertise in programming languages, web development, and cloud-based solutions.
               Feel free to explore my work and see how I’ve contributed to building scalable, high-performance applications with a focus on efficiency, innovation, and user experience.
             </p>
           </section>

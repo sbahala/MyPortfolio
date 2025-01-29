@@ -15,7 +15,7 @@ import cosmosDbLogo from "./assets/cosmos.png";
 import anacondaLogo from "./assets/anacondaLogo.png";
 import vsCodeLogo from "./assets/visualStudio.png";
 import shellScriptingLogo from "./assets/shellScripting.png";
-import githubAction  from "./assets/GithubAction.png";
+import githubAction from "./assets/GithubAction.png";
 import jenkins from "./assets/Jenkins.png";
 import databricks from "./assets/databricks.png";
 import trello from "./assets/Trello.png";
@@ -44,13 +44,12 @@ const categories = [
     ],
   },
   {
-    name: "CI/CD and  Cloud",
+    name: "CI/CD and Cloud",
     technologies: [
-      { name: "GitHub Actions ", image: githubAction },
-      { name: "Jenkins ", image: jenkins },
+      { name: "GitHub Actions", image: githubAction },
+      { name: "Jenkins", image: jenkins },
       { name: "Databricks", image: databricks },
       { name: "AWS", image: awsLogo },
-      
     ],
   },
   {
@@ -70,7 +69,7 @@ const TechnologyStack = () => {
 
   // Show heading after all images drop
   useEffect(() => {
-    const timer = setTimeout(() => setShowHeading(true), categories[currentCategory].technologies.length * 500);
+    const timer = setTimeout(() => setShowHeading(true), categories[currentCategory].technologies.length * 400);
     return () => clearTimeout(timer);
   }, [currentCategory]);
 
@@ -88,49 +87,58 @@ const TechnologyStack = () => {
   return (
     <section
       id="technology-stack"
-      className="w-full min-h-[600px] bg-gradient-to-r from-blue-100 to-indigo-200 py-16 relative flex items-center justify-center"
+      className="w-full min-h-[300px] bg-gradient-to-r from-blue-100 to-indigo-200 py-8 flex flex-col items-center justify-center relative"
     >
-      <div className="max-w-screen-2xl mx-auto text-center relative w-full px-12 flex items-center justify-between">
-        
-        {/* Left Arrow Button (Placed at the extreme left) */}
+      {/* Section Header */}
+      <motion.h2
+        initial={{ opacity: 0, y: -10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="text-3xl font-bold text-gray-800 mb-4"
+      >
+        My Tech Stack
+      </motion.h2>
+
+      <div className="max-w-screen-lg mx-auto text-center relative w-full px-8 flex items-center justify-center">
+        {/* Left Arrow Button at Extreme Left */}
         <button
           onClick={handlePrev}
-          className="absolute left-8 bottom-0 text-blue-500 hover:text-blue-700 transition duration-300 p-4 bg-white shadow-md rounded-full"
+          className="absolute left-0 transform -translate-x-1/2 text-blue-500 hover:text-blue-700 transition duration-300 p-2 bg-white shadow-md rounded-full"
         >
-          <FaArrowLeft size={50} />
+          <FaArrowLeft size={30} />
         </button>
 
         <div className="w-full flex flex-col items-center">
           {/* Tech Images Section */}
           <motion.div
             key={currentCategory}
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
+            exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.5 }}
-            className="flex justify-center gap-16 flex-wrap min-h-[300px]"
+            className="flex justify-center gap-6 flex-wrap min-h-[180px]"
           >
             {categories[currentCategory].technologies.map((tech, index) => (
               <motion.div
                 key={tech.name}
-                initial={{ y: -100, opacity: 0 }}
+                initial={{ y: -80, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.7, delay: index * 0.3, ease: "easeOut" }}
-                className="w-40 h-40 md:w-48 md:h-48 bg-white shadow-md rounded-full flex items-center justify-center p-6 border border-gray-300"
+                transition={{ duration: 0.6, delay: index * 0.15, ease: "easeOut" }}
+                className="w-24 h-24 md:w-28 md:h-28 bg-white shadow-md rounded-full flex items-center justify-center p-2 border border-gray-300"
               >
                 <img src={tech.image} alt={tech.name} className="w-full h-full object-contain" />
               </motion.div>
             ))}
           </motion.div>
 
-          {/* Ensure heading space is allocated before appearing */}
-          <div className="mt-12 min-h-[60px]">
+          {/* Category Title */}
+          <div className="mt-4 min-h-[30px]">
             {showHeading && (
               <motion.h2
-                initial={{ opacity: 0, y: 10 }}
+                initial={{ opacity: 0, y: 5 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
-                className="text-3xl font-bold text-gray-800"
+                transition={{ duration: 0.5, delay: 0.3 }}
+                className="text-lg font-semibold text-gray-800"
               >
                 {categories[currentCategory].name}
               </motion.h2>
@@ -138,12 +146,12 @@ const TechnologyStack = () => {
           </div>
         </div>
 
-        {/* Right Arrow Button (Placed at the extreme right) */}
+        {/* Right Arrow Button at Extreme Right */}
         <button
           onClick={handleNext}
-          className="absolute right-8 bottom-0 text-blue-500 hover:text-blue-700 transition duration-300 p-4 bg-white shadow-md rounded-full"
+          className="absolute right-0 transform translate-x-1/2 text-blue-500 hover:text-blue-700 transition duration-300 p-2 bg-white shadow-md rounded-full"
         >
-          <FaArrowRight size={50} />
+          <FaArrowRight size={30} />
         </button>
       </div>
     </section>

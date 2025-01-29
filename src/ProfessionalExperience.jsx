@@ -10,7 +10,7 @@ const experiences = [
   {
     title: "Software Engineer",
     company: "Charles Schwab, USA",
-    duration: "Jan 2024 – Till Date",
+    duration: "Jan 2024 – Present",
     image: charlesSchwabImg,
     gradient: "bg-white",
     textColor: "text-blue-900",
