@@ -15,7 +15,7 @@ import cosmosDbLogo from "./assets/cosmos.png";
 import anacondaLogo from "./assets/anacondaLogo.png";
 import vsCodeLogo from "./assets/visualStudio.png";
 import shellScriptingLogo from "./assets/shellScripting.png";
-import githubAction  from "./assets/GitHubAction.png";
+import githubAction  from "./assets/GithubAction.png";
 import jenkins from "./assets/Jenkins.png";
 import databricks from "./assets/databricks.png";
 import trello from "./assets/Trello.png";
