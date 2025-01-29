@@ -87,14 +87,14 @@ const TechnologyStack = () => {
   return (
     <section
       id="technology-stack"
-      className="w-full min-h-[300px] bg-gradient-to-r from-blue-100 to-indigo-200 py-8 flex flex-col items-center justify-center relative"
+      className="w-full min-h-[200px] bg-gradient-to-r from-blue-100 to-indigo-200 py-6 flex flex-col items-center justify-center relative"
     >
       {/* Section Header */}
       <motion.h2
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="text-3xl font-bold text-gray-800 mb-4"
+        className="text-2xl font-bold text-gray-800 mb-2"
       >
         My Tech Stack
       </motion.h2>
@@ -124,7 +124,7 @@ const TechnologyStack = () => {
                 initial={{ y: -80, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.6, delay: index * 0.15, ease: "easeOut" }}
-                className="w-24 h-24 md:w-28 md:h-28 bg-white shadow-md rounded-full flex items-center justify-center p-2 border border-gray-300"
+                className="w-20 h-20 md:w-24 md:h-24 bg-white shadow-md rounded-full flex items-center justify-center p-1 border border-gray-300"
               >
                 <img src={tech.image} alt={tech.name} className="w-full h-full object-contain" />
               </motion.div>
@@ -132,7 +132,7 @@ const TechnologyStack = () => {
           </motion.div>
 
           {/* Category Title */}
-          <div className="mt-4 min-h-[30px]">
+          <div className="mt-2 min-h-[20px]">
             {showHeading && (
               <motion.h2
                 initial={{ opacity: 0, y: 5 }}
