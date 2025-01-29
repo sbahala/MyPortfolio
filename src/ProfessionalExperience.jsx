@@ -62,18 +62,18 @@ const ProfessionalExperience = () => {
             />
           </div>
 
-          {/* Text Section */}
-          <div className="w-full md:w-1/2 p-6 text-center md:text-left flex flex-col justify-center">
+          {/* Text Section (Centered Content) */}
+          <div className="w-full md:w-1/2 p-6 flex flex-col items-center justify-center text-center">
             <h3 className={`text-2xl font-bold ${exp.textColor}`}>{exp.title}</h3>
             <p className="text-lg text-gray-600">{exp.company}</p>
             <p className="text-md text-gray-500">{exp.duration}</p>
             
-            {/* Read More Button with Smaller Width */}
+            {/* Read More Button (Small & Properly Sized) */}
             <a
               href={exp.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="read-more-btn"
+              className="read-more-btn mt-3"
             >
               Read More
             </a>
