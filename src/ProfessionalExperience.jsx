@@ -41,8 +41,8 @@ const experiences = [
 
 const ProfessionalExperience = () => {
   return (
-    <section id="experience" className="w-full py-10">
-      <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">
+    <section id="experience" className="w-full py-6">
+      <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">
         Professional Experience
       </h2>
 
@@ -51,7 +51,7 @@ const ProfessionalExperience = () => {
           key={index}
           className={`flex flex-col ${
             index % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"
-          } items-center ${exp.gradient} overflow-hidden mb-8`}
+          } items-center ${exp.gradient} overflow-hidden mb-8 rounded-2xl shadow-lg`}
         >
           {/* Image Section (Full Width to Edge) */}
           <div className="w-full md:w-[50%] h-[500px]">

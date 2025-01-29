@@ -44,7 +44,7 @@ const App = () => {
       </motion.header>
 
       {/* Main Content */}
-      <main className="p-8 space-y-16">
+      <main className="p-8 space-y-8">
         {/* Technology Stack Section with Ladder Effect */}
         <TechnologyStack />
 

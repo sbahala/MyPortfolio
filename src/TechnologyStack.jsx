@@ -87,7 +87,7 @@ const TechnologyStack = () => {
   return (
     <section
       id="technology-stack"
-      className="w-full min-h-[200px] bg-gradient-to-r from-blue-100 to-indigo-200 py-6 flex flex-col items-center justify-center relative"
+      className="w-full min-h-[200px] bg-gradient-to-r from-blue-100 to-indigo-200 py-6 flex flex-col items-center rounded-xl justify-center relative"
     >
       {/* Section Header */}
       <motion.h2
@@ -124,7 +124,7 @@ const TechnologyStack = () => {
                 initial={{ y: -80, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.6, delay: index * 0.15, ease: "easeOut" }}
-                className="w-20 h-20 md:w-24 md:h-24 bg-white shadow-md rounded-full flex items-center justify-center p-1 border border-gray-300"
+                className="w-20 h-20 md:w-24 md:h-24 bg-white shadow-md rounded-xl rounded-full flex items-center justify-center p-1 border border-gray-300"
               >
                 <img src={tech.image} alt={tech.name} className="w-full h-full object-contain" />
               </motion.div>
