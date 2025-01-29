@@ -1,6 +1,36 @@
+# 🚀 Technology Stack Showcase
 
-# MyPortfolio
+A sleek, animated **Technology Stack Display** built with **React.js & Framer Motion**, showcasing various **programming languages, tools, and frameworks** in an interactive UI.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🔗 Live Demo
+https://sushmitabahala.com/
 
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Features
+✅ **Dynamic Carousel Navigation**  
+✅ **Framer Motion Animations** for smooth UI transitions  
+✅ **Fully Responsive Design** (Mobile-Friendly)  
+✅ **Categorized Tech Stack**: Programming, Databases, CI/CD, IDEs  
+✅ **Compact, Interactive, and Minimalistic UI**  
+
+## 🛠️ Tech Stack Used
+- **Frontend:** React.js, Tailwind CSS, Framer Motion  
+- **Icons:** React Icons (for navigation arrows)  
+- **State Management:** useState Hook  
+- **Animation & Effects:** Framer Motion  
+- **Interactivity:** Dynamic Category Switching  
+
+## 📦 Installation & Setup
+To run this project locally, follow these steps:
+
+```bash
+# Clone the repo
+git clone https://github.com/sbahala/MyPortfolio.git
+
+# Navigate to project folder
+cd [repodirectory]
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
