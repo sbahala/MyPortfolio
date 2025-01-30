@@ -8,19 +8,17 @@ import nodeLogo from "./assets/nodeJs.png";
 import javaScript from "./assets/JavaScript.png";
 import java from "./assets/java.png";
 import awsLogo from "./assets/AWS.png";
-import dockerLogo from "./assets/docker.png";
 import mongoDbLogo from "./assets/mongoDb.png";
 import oracleLogo from "./assets/oracle.png";
-import cosmosDbLogo from "./assets/cosmos.png";
 import anacondaLogo from "./assets/anacondaLogo.png";
 import vsCodeLogo from "./assets/visualStudio.png";
 import shellScriptingLogo from "./assets/shellScripting.png";
 import githubAction from "./assets/GithubAction.png";
 import jenkins from "./assets/Jenkins.png";
-import databricks from "./assets/databricks.png";
 import trello from "./assets/Trello.png";
 import jira from "./assets/Jira.png";
 import python from "./assets/python.png";
+import PostGreSQL from "./assets/PostGreSQL.png";
 
 // Define Technology Categories
 const categories = [
@@ -36,11 +34,11 @@ const categories = [
     ],
   },
   {
-    name: "Databases",
+    name: "Databases( Relational & Non Relational )",
     technologies: [
       { name: "MongoDB", image: mongoDbLogo },
-      { name: "Oracle", image: oracleLogo },
-      { name: "CosmosDB", image: cosmosDbLogo },
+      { name: "Oracle PL/SQL", image: oracleLogo },
+      { name:"PostGreSQL", image:PostGreSQL},
     ],
   },
   {
@@ -48,7 +46,6 @@ const categories = [
     technologies: [
       { name: "GitHub Actions", image: githubAction },
       { name: "Jenkins", image: jenkins },
-      { name: "Databricks", image: databricks },
       { name: "AWS", image: awsLogo },
     ],
   },

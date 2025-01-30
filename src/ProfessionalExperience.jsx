@@ -1,22 +1,11 @@
 import React from "react";
 
 // Import images (Replace these with actual paths)
-import charlesSchwabImg from "./assets/charlesSchwab.png";
 import transUnionImg from "./assets/TransUnion1.png";
 import fssTechImg from "./assets/FSS-Logo.png";
 
 // Experience data
 const experiences = [
-  {
-    title: "Software Engineer",
-    company: "Charles Schwab, USA",
-    duration: "Jan 2024 – Present",
-    image: charlesSchwabImg,
-    gradient: "bg-white",
-    textColor: "text-blue-900",
-    buttonColor: "bg-green-500 hover:bg-green-700",
-    link: "https://www.schwab.com/",
-  },
   {
     title: "Associate Software Developer",
     company: "TransUnion, India",
