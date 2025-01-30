@@ -77,8 +77,8 @@ const App = () => {
           <section id="resume" className="bg-white rounded-2xl p-6 shadow-lg transition-transform transform hover:scale-105 text-center">
             <h2 className="text-3xl font-bold text-gray-800 mb-6">Download My Resume</h2>
             <a
-              href="/SushmitaBahala_Software Engineer_Resume.pdf"
-              download="SushmitaBahala_Software Engineer_Resume.pdf"
+              href="/SushmitaBahala_Resume.pdf"
+              download="SushmitaBahala_Resume.pdf"
               className="bg-blue-500 text-white px-6 py-3 rounded-lg text-lg font-medium shadow-md hover:bg-blue-600 transition-colors duration-300"
             >
               Download Resume
