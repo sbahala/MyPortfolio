@@ -91,7 +91,7 @@ const App = () => {
           <section id="projects" className="bg-white mx-auto max-w-6xl shadow-lg rounded-2xl p-6">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Recent Projects</h2>
             <div className="grid gap-6 md:grid-cols-2">
-              <ProjectCard title="Med Tracker" description="Developed a hospital management system for patients, doctor and nurse with real-time slot booking, cancellation and recommendation." link="https://github.com/yuzhi-wang/med_tracker/tree/main" />
+              <ProjectCard title="Med Tracker" description="Developed a hospital management system for patients, doctor and nurse with real-time slot booking, cancellation and recommendation." link="https://github.com/sbahala/med_tracker" />
               <ProjectCard title="Hotel Management System" description="Led and built a hotel management system in a group of 5 covering all functionalities." link="https://github.com/sbahala/SuitStay" />
             </div>
           </section>
