@@ -9,7 +9,7 @@ https://sushmitabahala.com/
 ✅ **Dynamic Carousel Navigation**  
 ✅ **Framer Motion Animations** for smooth UI transitions  
 ✅ **Fully Responsive Design** (Mobile-Friendly)  
-✅ **Categorized Tech Stack**: Programming
+✅ **Categorized Tech Stack**: Programming, Deployment using Vercel
 ✅ **Compact, Interactive, and Minimalistic UI**  
 
 ## 🛠️ Tech Stack Used
