@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer"; // For smooth scroll animations
 import TechnologyStack from "./TechnologyStack";
 import ProfessionalExperience from './ProfessionalExperience';
+import Introduction from './Introduction';
+import Education from './Education';
 
 // Animation variants for scrolling effects
 const sectionVariants = {
@@ -19,10 +21,18 @@ const App = () => {
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="bg-gradient-to-r from-purple-500 to-pink-600 text-white text-center py-12"
+        className="bg-gradient-to-r from-blue-300 to-teal-400 text-gray-800 text-center py-4 w-full fixed top-0 z-50 shadow-md"
       >
-        <h1 className="text-4xl font-bold">Hi, I'm Sushmita Bahala</h1>
-        <p className="text-lg mt-2">A passionate software developer</p>
+        <div className="max-w-7xl mx-auto flex justify-between items-center px-8">
+        <h1 className="text-2xl font-bold">
+            Sushmita <span className="text-orange-500">Bahala</span>
+        </h1>
+        <nav className="flex space-x-8 text-lg font-medium">
+          <a href="#education" className="hover:text-orange-400">Education</a>
+          <a href="#services" className="hover:text-orange-400">Services</a>
+          <a href="#projects" className="hover:text-orange-400">Projects</a>
+          <a href="#contact" className="hover:text-orange-400">Contact</a>
+        </nav>
         <div className="absolute top-4 right-4 flex space-x-4">
           <a
             href="https://www.linkedin.com/in/sushmitabahala/"
@@ -41,14 +51,19 @@ const App = () => {
             <i className="fab fa-github text-2xl"></i>
           </a>
         </div>
+        <button className="bg-pink-500 text-black rounded-full px-4 py-2 shadow-lg hover:bg-pink-400 transition-colors">
+          <i className="fas fa-moon"></i>
+        </button>
+        </div>
       </motion.header>
 
       {/* Main Content */}
-      <main className="p-8 space-y-8">
+      <main className="pt-24 p-8 space-y-8">
         {/* Technology Stack Section with Ladder Effect */}
-        <TechnologyStack />
+       {/*<TechnologyStack />*/}
+        <Introduction/>
 
-        {/* Sections with Scroll-in Animation */}
+        {/* Sections with Scroll-in Animation 
         <ScrollSection>
           <section id="introduction" className="bg-white mx-auto max-w-6xl rounded-2xl p-6 transition-transform transform hover:scale-105">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Introduction</h2>
@@ -57,15 +72,9 @@ const App = () => {
               Feel free to explore my work and see how I’ve contributed to building scalable, high-performance applications with a focus on efficiency, innovation, and user experience.
             </p>
           </section>
-        </ScrollSection>
-
-        <ScrollSection>
-          <section id="education" className="bg-white mx-auto max-w-6xl shadow-lg rounded-2xl p-6 transition-transform transform hover:scale-105">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">Education</h2>
-            <strong>Master's in Software Engineering</strong>, Stevens Institute of Technology<br />
-            <strong>Bachelor of Technology in Computer Science</strong>, Silicon Institute of Technology
-          </section>
-        </ScrollSection>
+        </ScrollSection>*/}
+        
+        <Education />
 
         {/* Experience Section */}
         <ScrollSection>
