@@ -34,12 +34,13 @@ const Introduction = () => {
         <div className="flex gap-6 mt-6 justify-center md:justify-start">
           <a href="/resume.pdf" download className="bg-orange-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-orange-600">Download CV</a>
           <a href="#contact" className="bg-black text-white px-6 py-3 rounded-lg shadow-md hover:bg-gray-800">Contact</a>
+          <h5>Work in Progress</h5>
         </div>
       </div>
 
       {/* Image Section */}
       <div className="w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-orange-400 shadow-lg">
-        <img src={profilePic} alt="Aryan" className="w-full h-full object-cover" />
+        <img src={profilePic} alt="Sushmita" className="w-full h-full object-cover" />
       </div>
     </section>
   );
