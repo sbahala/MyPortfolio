@@ -6,6 +6,7 @@ import TechnologyStack from "./TechnologyStack";
 import ProfessionalExperience from './ProfessionalExperience';
 import Introduction from './Introduction';
 import Education from './Education';
+import ContactForm from './ContactForm';
 
 // Animation variants for scrolling effects
 const sectionVariants = {
@@ -28,9 +29,10 @@ const App = () => {
             Sushmita <span className="text-orange-500">Bahala</span>
         </h1>
         <nav className="flex space-x-8 text-lg font-medium">
+          <a href="#introduction" className="hover:text-orange-400">Introduction</a>
           <a href="#education" className="hover:text-orange-400">Education</a>
-          <a href="#services" className="hover:text-orange-400">Services</a>
-          <a href="#projects" className="hover:text-orange-400">Projects</a>
+          <a href="#experience" className="hover:text-orange-400">ProfessionalExperience</a>
+          <a href="#projects" className="hover:text-orange-400">Recent Projects</a>
           <a href="#contact" className="hover:text-orange-400">Contact</a>
         </nav>
         <div className="absolute top-4 right-4 flex space-x-4">
@@ -81,7 +83,7 @@ const App = () => {
           <ProfessionalExperience />
         </ScrollSection>
 
-        {/* Resume Section with Hover Effect */}
+        {/* Resume Section with Hover Effect 
         <ScrollSection>
           <section id="resume" className="bg-white rounded-2xl p-6 shadow-lg transition-transform transform hover:scale-105 text-center">
             <h2 className="text-3xl font-bold text-gray-800 mb-6">Download My Resume</h2>
@@ -93,7 +95,7 @@ const App = () => {
               Download Resume
             </a>
           </section>
-        </ScrollSection>
+        </ScrollSection>*/}
 
         {/* Projects Section */}
         <ScrollSection>
@@ -106,7 +108,7 @@ const App = () => {
           </section>
         </ScrollSection>
 
-        {/* Social Links Section */}
+        {/* Social Links Section 
         <ScrollSection>
           <section id="social-links" className="bg-white shadow-lg rounded-2xl p-6">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Connect with Me</h2>
@@ -115,6 +117,9 @@ const App = () => {
               <SocialLink platform="GitHub" url="https://github.com/sbahala" icon="fab fa-github" />
             </ul>
           </section>
+        </ScrollSection>*/}
+        <ScrollSection>
+          <ContactForm />
         </ScrollSection>
 
         {/* Summary Section */}

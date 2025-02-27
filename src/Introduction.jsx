@@ -19,7 +19,7 @@ const Introduction = () => {
   }, []);
 
   return (
-    <section id="introduction" className="bg-white mx-auto max-w-7xl rounded-2xl p-8 flex flex-col md:flex-row items-center gap-10 transition-transform transform hover:scale-105">
+    <section id="introduction" className="bg-white mx-auto max-w-8xl rounded-2xl p-8 flex flex-col md:flex-row items-center gap-10 transition-transform transform hover:scale-105">
       {/* Text Section */}
       <div className="md:w-2/3 text-center md:text-left">
         <h1 className="text-5xl font-bold text-gray-800 mb-4">
@@ -32,7 +32,7 @@ const Introduction = () => {
           Hello! I'm a passionate Coder a deep love for coding and technology. I have hands-on experience with React, Node, HTML, CSS, JavaScript, Java and React.js. My goal is to learn everyday use my skill as a Full Stack Developer and explore AI and ML.
         </p>
         <div className="flex gap-6 mt-6 justify-center md:justify-start">
-          <a href="/resume.pdf" download className="bg-orange-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-orange-600">Download CV</a>
+          <a href="/Bahala_Sushmita_Resume.pdf" download className="bg-orange-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-orange-600">Download CV</a>
           <a href="#contact" className="bg-black text-white px-6 py-3 rounded-lg shadow-md hover:bg-gray-800">Contact</a>
           <h5>Work in Progress</h5>
         </div>
