@@ -24,7 +24,7 @@ const App = () => {
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="bg-gradient-to-r from-blue-300 to-teal-400 text-gray-800 text-center py-4 w-full fixed top-0 z-50 shadow-md"
+        className="bg-gradient-to-r from-gray-400 via-gray-600 to-orange-500 text-white text-center py-4 w-full fixed top-0 z-50 shadow-md"
       >
         <div className="max-w-7xl mx-auto flex justify-between items-center px-8">
         <h1 className="text-2xl font-bold">
@@ -56,9 +56,9 @@ const App = () => {
             <i className="fab fa-github text-2xl"></i>
           </a>
         </div>
-        <button className="bg-pink-500 text-black rounded-full px-4 py-2 shadow-lg hover:bg-pink-400 transition-colors">
+        {/*<button className="bg-pink-500 text-black rounded-full px-4 py-2 shadow-lg hover:bg-pink-400 transition-colors">
           <i className="fas fa-moon"></i>
-        </button>
+        </button>*/}
         </div>
       </motion.header>
 

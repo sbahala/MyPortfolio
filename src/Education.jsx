@@ -17,7 +17,7 @@ const educationData = [
 
 const Education = () => {
   return (
-    <section id="education" className="bg-white mx-auto max-w-8xl p-14 rounded-2xl shadow-lg">
+    <section id="education" className=" mx-auto max-w-8xl p-14 rounded-2xl shadow-lg">
       <h2 className="text-4xl font-bold text-center text-gray-800 mb-14">Education</h2>
 
       <div className="relative">

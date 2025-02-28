@@ -41,10 +41,10 @@ const Skills = () => {
   return (
     <section id="skills" className="relative py-20 bg-white-900 p-14 rounded-2xl text-white overflow-hidden">
       {/* Animated Background */}
-      <div className="absolute inset-0 w-full h-full opacity-20 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-blue-900 via-gray-900 to-black"></div>
+      <div className="absolute inset-0 w-full h-full opacity-20 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-blue-900 via-white-900"></div>
 
       <div className="container mx-auto px-6 relative z-10">
-        <h2 className="text-5xl font-bold text-center text-black-400 mb-12">
+        <h2 className="text-4xl font-bold text-center text-black-400 mb-12">
           My Skills
         </h2>
 

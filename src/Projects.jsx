@@ -43,7 +43,7 @@ const Projects = () => {
     <section id="projects" className="py-16 bg-gray-100 rounded-2xl shadow-lg text-gray-900">
       <div className="container mx-auto text-center">
         {/* Section Heading */}
-        <h2 className="text-5xl font-bold mb-12 text-orange-500">Projects</h2>
+        <h2 className="text-4xl font-bold mb-12 text-orange-500">Projects</h2>
 
         {/* Scrollable Container */}
         <div className="relative w-full overflow-x-auto scrollbar-hide px-4">

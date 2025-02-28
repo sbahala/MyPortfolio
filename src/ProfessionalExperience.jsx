@@ -31,7 +31,7 @@ const experiences = [
 const ProfessionalExperience = () => {
   return (
     <section id="experience" className="w-full">
-      <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">
+      <h2 className="text-4xl font-bold text-center text-gray-800 mb-6">
         Professional Experience
       </h2>
 

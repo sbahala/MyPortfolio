@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
@@ -21,22 +22,21 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // EmailJS Template Parameters
     const emailParams = {
       name: formData.name,
-      email: formData.email, // User's email
+      email: formData.email,
       phone: formData.phone,
       subject: formData.subject,
       message: formData.message,
-      reply_to: formData.email, // Ensure this is passed for Reply-To to work
+      reply_to: formData.email,
     };
 
     emailjs
       .send(
-        "service_6ojfi8o", // Replace with your EmailJS service ID
-        "template_a7pt00w", // Replace with your EmailJS template ID
-        emailParams, // Sending the correctly structured data
-        "DhitD8Q-eT1LeWyP3" // Replace with your EmailJS public key
+        "service_6ojfi8o",
+        "template_a7pt00w",
+        emailParams,
+        "DhitD8Q-eT1LeWyP3"
       )
       .then(
         (response) => {
@@ -52,74 +52,105 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="contact" className="flex flex-col items-center justify-center py-12 rounded-2xl shadow-lg bg-gray-100">
-      <h2 className="text-4xl font-bold text-gray-800 mb-6">
-        Contact <span className="text-orange-500">Me</span>
-      </h2>
+    <section
+      id="contact"
+      className="flex flex-col items-center justify-center py-16 px-6 bg-white-900"
+    >
+      {/* Contact Header */}
+      <motion.h2
+        className="text-5xl font-bold text-center mb-8 text-orange-400"
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
+        Get In <span className="text-white">Touch</span>
+      </motion.h2>
 
-      <form onSubmit={handleSubmit} className="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-6 px-8">
-        {/* Left Inputs */}
-        <div className="flex flex-col space-y-4">
-          <input
-            type="text"
-            name="name"
-            placeholder="Full Name"
-            value={formData.name}
-            onChange={handleChange}
-            className="border-2 border-orange-400 p-4 rounded-lg w-full focus:ring focus:ring-orange-300"
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Email"
-            value={formData.email}
-            onChange={handleChange}
-            className="border-2 border-orange-400 p-4 rounded-lg w-full focus:ring focus:ring-orange-300"
-            required
-          />
-          <input
-            type="text"
-            name="phone"
-            placeholder="Phone Number"
-            value={formData.phone}
-            onChange={handleChange}
-            className="border-2 border-orange-400 p-4 rounded-lg w-full focus:ring focus:ring-orange-300"
-          />
-          <input
-            type="text"
-            name="subject"
-            placeholder="Subject"
-            value={formData.subject}
-            onChange={handleChange}
-            className="border-2 border-orange-400 p-4 rounded-lg w-full focus:ring focus:ring-orange-300"
-            required
-          />
+      {/* Contact Form */}
+      <motion.form
+        onSubmit={handleSubmit}
+        className="w-full max-w-3xl bg-white p-10 rounded-xl shadow-xl border border-gray-300"
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
+      >
+        {/* Form Fields */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {["name", "email", "phone", "subject"].map((field, index) => (
+            <motion.div
+              key={index}
+              className="relative"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: index * 0.1 }}
+            >
+              <input
+                type={field === "email" ? "email" : "text"}
+                name={field}
+                placeholder=""
+                value={formData[field]}
+                onChange={handleChange}
+                className="peer w-full bg-transparent text-gray-700 border-2 border-orange-400 py-3 px-4 rounded-lg focus:outline-none focus:border-orange-500 transition-all placeholder-transparent"
+                required
+              />
+              <label
+                className="absolute left-4 top-2 text-gray-500 text-sm transition-all peer-placeholder-shown:top-5 peer-placeholder-shown:text-lg peer-placeholder-shown:text-gray-400"
+              >
+                {field.charAt(0).toUpperCase() + field.slice(1)}
+              </label>
+            </motion.div>
+          ))}
         </div>
 
-        {/* Right Message Input */}
-        <textarea
-          name="message"
-          placeholder="Your Message"
-          value={formData.message}
-          onChange={handleChange}
-          className="border-2 border-orange-400 p-4 rounded-lg w-full h-40 resize-none focus:ring focus:ring-orange-300"
-          required
-        ></textarea>
+        {/* Message Box */}
+        <motion.div
+          className="relative mt-6"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, delay: 0.3 }}
+        >
+          <textarea
+            name="message"
+            placeholder=""
+            value={formData.message}
+            onChange={handleChange}
+            className="peer w-full h-32 bg-transparent text-gray-700 border-2 border-orange-400 py-3 px-4 rounded-lg focus:outline-none focus:border-orange-500 transition-all placeholder-transparent"
+            required
+          />
+          <label
+            className="absolute left-4 top-3 text-gray-400 text-sm peer-placeholder-shown:top-5 peer-placeholder-shown:text-lg peer-placeholder-shown:text-gray-500 transition-all"
+          >
+            Your Message
+          </label>
+        </motion.div>
 
         {/* Submit Button */}
-        <div className="col-span-2 flex justify-center">
-          <button
+        <div className="flex justify-center mt-8">
+          <motion.button
             type="submit"
-            className="bg-orange-500 text-white px-6 py-3 rounded-full shadow-lg hover:bg-orange-400 transition-all duration-300"
+            className="relative px-8 py-3 text-lg font-semibold bg-orange-500 text-white rounded-full shadow-lg transition-all duration-300 hover:scale-110 hover:bg-orange-400"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
           >
             Send Message
-          </button>
+            <span className="absolute inset-0 bg-orange-300 opacity-10 blur-xl rounded-full"></span>
+          </motion.button>
         </div>
-      </form>
+      </motion.form>
 
       {/* Status Message */}
-      {status && <p className="mt-4 text-gray-700">{status}</p>}
+      {status && (
+        <motion.p
+          className={`mt-6 text-lg ${
+            status.includes("successfully") ? "text-black-400" : "text-red-400"
+          }`}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          {status}
+        </motion.p>
+      )}
     </section>
   );
 };
