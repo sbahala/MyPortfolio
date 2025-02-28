@@ -29,7 +29,7 @@ const Introduction = () => {
           I'm a <span ref={typedRef} className="text-orange-500"></span>
         </h2>
         <p className="text-gray-700 leading-relaxed">
-          Hello! I'm a passionate Coder a deep love for coding and technology. I have hands-on experience with React, Node, HTML, CSS, JavaScript, Java and React.js. My goal is to learn everyday use my skill as a Full Stack Developer and explore AI and ML.
+          Hello! I'm a passionate Coder a deep love for coding and technology. I have hands-on experience with React, Node, HTML, CSS, JavaScript, Java. My goal is to learn everyday use my skill as a Full Stack Developer and explore AI and ML.
         </p>
         <div className="flex gap-6 mt-6 justify-center md:justify-start">
           <a href="/Bahala_Sushmita_Resume.pdf" download className="bg-orange-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-orange-600">Download CV</a>
