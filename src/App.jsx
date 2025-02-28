@@ -7,6 +7,8 @@ import ProfessionalExperience from './ProfessionalExperience';
 import Introduction from './Introduction';
 import Education from './Education';
 import ContactForm from './ContactForm';
+import Projects from './Projects';
+import Skills from './skills';
 
 // Animation variants for scrolling effects
 const sectionVariants = {
@@ -32,6 +34,7 @@ const App = () => {
           <a href="#introduction" className="hover:text-orange-400">Introduction</a>
           <a href="#education" className="hover:text-orange-400">Education</a>
           <a href="#experience" className="hover:text-orange-400">ProfessionalExperience</a>
+          <a href="#skills" className="hover:text-orange-400">Skills</a>
           <a href="#projects" className="hover:text-orange-400">Recent Projects</a>
           <a href="#contact" className="hover:text-orange-400">Contact</a>
         </nav>
@@ -75,12 +78,15 @@ const App = () => {
             </p>
           </section>
         </ScrollSection>*/}
-        
-        <Education />
-
+        <ScrollSection>
+          <Education />
+        </ScrollSection>
         {/* Experience Section */}
         <ScrollSection>
           <ProfessionalExperience />
+        </ScrollSection>
+        <ScrollSection>
+          <Skills/>
         </ScrollSection>
 
         {/* Resume Section with Hover Effect 
@@ -97,7 +103,7 @@ const App = () => {
           </section>
         </ScrollSection>*/}
 
-        {/* Projects Section */}
+        {/* Projects Section 
         <ScrollSection>
           <section id="projects" className="bg-white mx-auto max-w-6xl shadow-lg rounded-2xl p-6">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Recent Projects</h2>
@@ -106,6 +112,9 @@ const App = () => {
               <ProjectCard title="Hotel Management System" description="Led and built a hotel management system in a group of 5 covering all functionalities." link="https://github.com/sbahala/SuitStay" />
             </div>
           </section>
+        </ScrollSection>*/}
+        <ScrollSection>
+          <Projects />
         </ScrollSection>
 
         {/* Social Links Section 

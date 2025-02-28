@@ -3,16 +3,15 @@ import { motion } from "framer-motion";
 
 const educationData = [
   {
-    year: "2012 - 2016",
-    title: "Silicon Institute of Technology",
-    description:
-      "Bachelors of Technology in Computer Science|| India, Odisha Bhubaneswar || Year of Passing: 2016",
-  },
-  {
     year: "2022 - 2024",
     title: "Stevens Institute of Technology",
-    description:
-      "Masters in Software Engineering ||  United States of America, New Jersey, Hoboken || Graduation Year: 2024",
+    description:"Masters in Software Engineering ||  United States of America, New Jersey, Hoboken || Graduation Year: 2024",
+   
+  },
+  {
+    year: "2012 - 2016",
+    title: "Silicon Institute of Technology",
+    description: "Bachelors of Technology in Computer Science|| India, Odisha Bhubaneswar || Year of Passing: 2016",
   },
 ];
 

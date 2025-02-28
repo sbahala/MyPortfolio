@@ -21,12 +21,22 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    // EmailJS Template Parameters
+    const emailParams = {
+      name: formData.name,
+      email: formData.email, // User's email
+      phone: formData.phone,
+      subject: formData.subject,
+      message: formData.message,
+      reply_to: formData.email, // Ensure this is passed for Reply-To to work
+    };
+
     emailjs
       .send(
-        "YOUR_SERVICE_ID", // Replace with your EmailJS service ID
-        "YOUR_TEMPLATE_ID", // Replace with your EmailJS template ID
-        formData,
-        "YOUR_PUBLIC_KEY" // Replace with your EmailJS public key
+        "service_6ojfi8o", // Replace with your EmailJS service ID
+        "template_a7pt00w", // Replace with your EmailJS template ID
+        emailParams, // Sending the correctly structured data
+        "DhitD8Q-eT1LeWyP3" // Replace with your EmailJS public key
       )
       .then(
         (response) => {
@@ -42,7 +52,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="contact" className="flex flex-col items-center justify-center py-12 bg-gray-100">
+    <section id="contact" className="flex flex-col items-center justify-center py-12 rounded-2xl shadow-lg bg-gray-100">
       <h2 className="text-4xl font-bold text-gray-800 mb-6">
         Contact <span className="text-orange-500">Me</span>
       </h2>
