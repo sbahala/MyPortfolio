@@ -10,11 +10,11 @@ const skills = [
   },
   {
     category: "Back-End",
-    skills: ["Spring MVC", "Node.js", "Express.js", "Spring Boot", "Django", "GraphQL", "MongoDB", "PostgreSQL"],
+    skills: ["Java","Python","Spring MVC", "Node.js", "Express.js", "Spring Boot", "Django", "GraphQL", "MongoDB", "PostgreSQL"],
   },
   {
     category: "CI/CD & DevOps",
-    skills: ["Docker", "Kubernetes", "Jenkins", "GitHub Actions", "Terraform", "AWS Lambda", "Bitbucket"],
+    skills: [ "Jenkins", "GitHub Actions", "Bitbucket", "Docker", "Kubernetes", "Terraform", "AWS Lambda"],
   },
   {
     category: "Cloud Platforms",
