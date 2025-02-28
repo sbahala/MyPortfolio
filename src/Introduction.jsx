@@ -33,8 +33,7 @@ const Introduction = () => {
         </p>
         <div className="flex gap-6 mt-6 justify-center md:justify-start">
           <a href="/Bahala_Sushmita_Resume.pdf" download className="bg-orange-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-orange-600">Download CV</a>
-          <a href="#contact" className="bg-black text-white px-6 py-3 rounded-lg shadow-md hover:bg-gray-800">Contact</a>
-          <h5>Work in Progress</h5>
+          <a href="#contact" className="bg-orange-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-gray-800">Contact</a>
         </div>
       </div>
 
