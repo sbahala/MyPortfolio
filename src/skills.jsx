@@ -10,7 +10,7 @@ const skills = [
   },
   {
     category: "Back-End",
-    skills: ["Java","Python","Spring MVC", "Node.js", "Express.js", "Spring Boot", "Django", "GraphQL", "MongoDB", "PostgreSQL"],
+    skills: [ "Java","Python","Spring MVC", "Node.js", "Express.js", "Spring Boot", "Django", "GraphQL", "MongoDB", "PostgreSQL"],
   },
   {
     category: "CI/CD & DevOps",
