@@ -17,8 +17,8 @@ const skills = [
     skills: [ "Jenkins", "GitHub Actions", "Bitbucket", "Docker", "Kubernetes", "Terraform", "AWS Lambda"],
   },
   {
-    category: "Cloud Platforms",
-    skills: ["AWS", "Firebase"],
+    category: "DataBase & Cloud Platforms",
+    skills: ["Oracle Pl/SQL","Postgre SQL","MySQL","MongoDB","Cloud FireStore","AWS", "Firebase"],
   },
 ];
 
